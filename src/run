@@ -1,0 +1,6 @@
+k6 run .\src\ping.js
+k6 run .\src\ping.js --summary-export report.json
+k6 run .\src\ping.js --out json=realtime-report.json
+
+# powershell
+$env:K6_WEB_DASHBOARD="true"; k6 run .\src\ping.js
